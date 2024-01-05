@@ -1,5 +1,5 @@
 {
-  "homepage": "https://acapetis.github.io/astro-web/",
+  "homepage": ".",
   "proxy": "http://localhost:5000",
   "name": "website",
   "version": "0.1.0",
