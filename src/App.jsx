@@ -1,6 +1,6 @@
 import './App.css'
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
 
@@ -12,15 +12,15 @@ import News from "./components/News"
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/signup" element={<Signup/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/news" element={<News/>}/>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/astro-web" element={<Home/>}/>
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/news" element={<News />} />
 
-        </Routes>
-      </Router>
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }
